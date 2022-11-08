@@ -44,12 +44,12 @@
 
   <div class="welcome">
     <h2>Найдите дом своей мечты</h2>
-    <h5 style="font-family: 'Montserrat-Light';">Найдите для себя лучшее жилье</h5>
+    <p>Найдите для себя лучшее жилье</p>
     <ion-button>Поиск</ion-button>
   </div>
 
   <div class="interest">
-    <h1 class="ion-padding" style="font-weight: 400;font-size: 22px;padding-bottom: 0 !important;">Вам может быть интересно</h1>
+    <h3 class="ion-padding">Вам может быть интересно</h3>
     <ion-slides class="ion-padding" pager="false" [options]="slideOpts">
       <ion-slide>
         <ion-card class="ion-no-margin">
@@ -57,7 +57,7 @@
             <ion-card-title>Вакансии</ion-card-title>
             <ion-card-subtitle>Станьте частью нашей команды</ion-card-subtitle>
           </ion-card-header>
-          <ion-card-content style="background: linear-gradient(rgba(156, 229, 237, 1), rgba(191, 249, 255, 0.69));background-size: cover;">
+          <ion-card-content class="card1">
             <img src="/assets/images/astronaut floating.png"/>
           </ion-card-content>
         </ion-card>
@@ -68,7 +68,7 @@
             <ion-card-title>Вакансии</ion-card-title>
             <ion-card-subtitle>Станьте частью нашей команды</ion-card-subtitle>
           </ion-card-header>
-          <ion-card-content style="background: linear-gradient(rgba(156, 229, 237, 1), rgba(191, 249, 255, 0.69));background-size: cover;">
+          <ion-card-content class="card1">
             <img src="/assets/images/astronaut floating.png"/>
           </ion-card-content>
         </ion-card>
@@ -79,18 +79,7 @@
             <ion-card-title>Вакансии</ion-card-title>
             <ion-card-subtitle>Станьте частью нашей команды</ion-card-subtitle>
           </ion-card-header>
-          <ion-card-content style="background: linear-gradient(rgba(156, 229, 237, 1), rgba(191, 249, 255, 0.69));background-size: cover;">
-            <img src="/assets/images/astronaut floating.png"/>
-          </ion-card-content>
-        </ion-card>
-      </ion-slide>
-      <ion-slide>
-        <ion-card class="ion-no-margin">
-          <ion-card-header>
-            <ion-card-title>Вакансии</ion-card-title>
-            <ion-card-subtitle>Станьте частью нашей команды</ion-card-subtitle>
-          </ion-card-header>
-          <ion-card-content style="background: linear-gradient(rgba(156, 229, 237, 1), rgba(191, 249, 255, 0.69));background-size: cover;">
+          <ion-card-content class="card1">
             <img src="/assets/images/astronaut floating.png"/>
           </ion-card-content>
         </ion-card>
@@ -106,7 +95,7 @@
     <ion-input placeholder="Ваше имя"></ion-input>
     <h4>Телефон</h4>
     <ion-input placeholder="+7 (700) 000 00-00"></ion-input>
-    <ion-button [routerLink]="['/thanks']" style="width: 100%;">Получить консультацию</ion-button>
+    <ion-button [routerLink]="['/thanks']" id="get_consulted">Получить консультацию</ion-button>
   </div>
 
   <div class="info ion-padding">
@@ -131,7 +120,7 @@
     <br>
     <h5>EMAIL</h5>
     <p>office@ined.kz</p>
-    <ion-grid style="width: 70%;">
+    <ion-grid id="platforms">
       <ion-row>
         <ion-col><ion-icon name="logo-instagram" size="small"></ion-icon></ion-col>
         <ion-col><ion-icon name="logo-facebook" size="small"></ion-icon></ion-col>

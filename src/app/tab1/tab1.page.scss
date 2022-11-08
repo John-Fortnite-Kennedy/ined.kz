@@ -2,7 +2,7 @@ p{
     font-family: 'Montserrat-Light';
 }
 
-h1{
+h1 h2 h3 h4 h5{
     font-family: 'Montserrat-Medium';
 }
 
@@ -72,6 +72,10 @@ ion-slide{
     }
 }
 
+.card1{
+    background: linear-gradient(rgba(156, 229, 237, 1), rgba(191, 249, 255, 0.69));
+}
+
 .form{
     height: 90%;
     background-color: #f4f4f4;
@@ -86,4 +90,12 @@ ion-input{
 .contacts{
     text-align: center;
     background-color: #f4f4f4;
+}
+
+#get_consulted{
+    width: 100%;
+}
+
+#platforms{
+    width: 70%;
 }
