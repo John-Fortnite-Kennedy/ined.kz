@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ControlContainer } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tab1',
@@ -7,6 +9,17 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  slideOpts = {
+    initialSlide: 0,
+    spaceBetween: 20,
+    //centerInsufficientSlides: false,
+    //speed: 400
+}
+
+  constructor(private router: Router) {}
+
+  navigate(){
+    this.router.navigate(['/thanks'])
+  }
 
 }
